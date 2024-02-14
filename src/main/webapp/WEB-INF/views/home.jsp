@@ -1,18 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8"%>
 <%@ page session="false"%>
 <html>
 <head>
-<title>Home</title>
+  <title>Home</title>
 </head>
 <body>
-	<h1>Hello world!</h1>
+<h1>BMI Calculator</h1>
 
-	<P>The time on the server is ${serverTime}.</p>
+<P>Enter height(inches) and weight(lbs)</p>
 
-	<form action="user" method="post">
-		<input type="text" name="userName"><br> <input
-			type="submit" value="Login">
-	</form>
+<form action="bmi" method="post">
+  <label>Height(in):</label>
+  <input type="text" name="height"><br>
+  <label>Weight(lb):</label>
+  <input type="text" name="weight"><br>
+  <input type="submit" value="Calculate">
+</form>
 </body>
 </html>
